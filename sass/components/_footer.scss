@@ -1,0 +1,173 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+}
+
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-block-address {
+  margin-right: 70px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: $whiteColor;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.footer-address {
+  color: $whiteColor;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-street {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.footer-link {
+  display: block;
+
+  color: #ffffff99;
+
+  transition: color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $brandColor;
+  }
+}
+
+.footer-mail {
+  margin-bottom: 6px;
+}
+
+.footer-block-social-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: $whiteColor;
+}
+
+.footer-block-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-block-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: #ffffff1a;
+  color: $whiteColor;
+
+  transition: background-color 250ms $transition-timing-function,
+    transform 500ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $brandColor;
+    transform: rotate(360deg);
+  }
+}
+
+.footer-block-social-icon {
+  fill: currentColor;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+}
+
+.form-text {
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: $whiteColor;
+
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px;
+  margin-right: 15px;
+
+  background-color: inherit;
+  color: #ffffff99;
+
+  outline: none;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 200px;
+  height: 50px;
+
+  padding: 10px 28px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: $brandColor;
+  color: $whiteColor;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: transparent;
+  border-radius: 4px;
+
+  transition: background-color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.form-icon {
+  margin-left: 10px;
+  fill: $whiteColor;
+}
