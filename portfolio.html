@@ -28,8 +28,15 @@
       <div class="container header-flex">
         <nav class="header-nav">
           <a class="logo" href="./index.html">
-            <span class="logo-accent">Web</span>Studio
+            <span class="logo-accent">Web</span>
+            Studio
           </a>
+
+          <button class="btn-burger js-open-menu" type="button">
+            <svg width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
 
           <ul class="nav-list">
             <li class="nav-item">
@@ -38,7 +45,9 @@
             <li class="nav-item">
               <a class="nav-link current-page" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -51,6 +60,7 @@
               info@devstudio.com
             </a>
           </li>
+
           <li class="auth-item">
             <a class="auth-link" href="tel:+380961111111">
               <svg class="auth-icon" width="16" height="16">
@@ -60,6 +70,45 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <!-- Мобільне меню -->
+
+      <div class="mob-menu js-menu-container">
+        <ul class="mob-menu-list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="./index.html">Студія</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link current-page" href="">Портфоліо</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mob-auth-list">
+          <li class="mob-auth-item">
+            <a class="mob-auth-link" href="mailto:info@devstudio.com">+38 096 111 11 11</a>
+          </li>
+
+          <li class="mob-auth-item">
+            <a class="mob-auth-link" href="tel:+380961111111">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mob-social-list">
+          <li class="mob-social-item"><a class="mob-social-link" href="">Instagram</a></li>
+          <li class="mob-social-item"><a class="mob-social-link" href="">Twitter</a></li>
+          <li class="mob-social-item"><a class="mob-social-link" href="">Facebook</a></li>
+          <li class="mob-social-item"><a class="mob-social-link" href="">LinkedIn</a></li>
+        </ul>
+
+        <button class="btn-mobil-close js-close-menu" type="button">
+          <svg class="btn-mobile-close-icon" width="25" height="25">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -91,12 +140,45 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img1.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img1mob@1x.jpg 1x,
+                        ./images/works/img1mob@2x.jpg 2x,
+                        ./images/works/img1mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img1tabl@1x.jpg 1x,
+                        ./images/works/img1tabl@2x.jpg 2x,
+                        ./images/works/img1tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img1desc@1x.jpg 1x,
+                        ./images/works/img1desc@2x.jpg 2x,
+                        ./images/works/img1desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img1mob@1x.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -116,12 +198,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img2.jpg"
-                    alt="Постер"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img2mob@1x.jpg 1x,
+                        ./images/works/img2mob@2x.jpg 2x,
+                        ./images/works/img2mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img2tabl@1x.jpg 1x,
+                        ./images/works/img2tabl@2x.jpg 2x,
+                        ./images/works/img2tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img2desc@1x.jpg 1x,
+                        ./images/works/img2desc@2x.jpg 2x,
+                        ./images/works/img2desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img2mob@1x.jpg"
+                      alt="Постер"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -144,12 +258,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img3.jpg"
-                    alt="Ресторан"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img3mob@1x.jpg 1x,
+                        ./images/works/img3mob@2x.jpg 2x,
+                        ./images/works/img3mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img3tabl@1x.jpg 1x,
+                        /images/works/img3tabl@2x.jpg  2x,
+                        /images/works/img3tabl@3x.jpg  3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img3desc@1x.jpg 1x,
+                        ./images/works/img3desc@2x.jpg 2x,
+                        ./images/works/img3desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img3mob@1x.jpg"
+                      alt="Ресторан"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -172,12 +318,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img4.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img4mob@1x.jpg 1x,
+                        ./images/works/img4mob@2x.jpg 2x,
+                        ./images/works/img4mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset=" 
+                        ./images/works/img4tabl@1x.jpg 1x,
+                        ./images/works/img4tabl@2x.jpg 2x,
+                        ./images/works/img4tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img4desc@1x.jpg 1x,
+                        ./images/works/img4desc@2x.jpg 2x,
+                        ./images/works/img4desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img4mob@1x.jpg"
+                      alt="Навушники"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -200,12 +378,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img5.jpg"
-                    alt="коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img5mob@1x.jpg 1x,
+                        ./images/works/img5mob@2x.jpg 2x,
+                        ./images/works/img5mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img5tabl@1x.jpg 1x,
+                        ./images/works/img5tabl@2x.jpg 2x,
+                        ./images/works/img5tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img5desc@1x.jpg 1x,
+                        ./images/works/img5desc@2x.jpg 2x,
+                        ./images/works/img5desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img5mob@1x.jpg"
+                      alt="коробки"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -228,12 +438,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img6.jpg"
-                    alt="Монітор"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img6mob@1x.jpg 1x,
+                        ./images/works/img6mob@2x.jpg 2x,
+                        ./images/works/img6mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img6tabl@1x.jpg 1x,
+                        ./images/works/img6tabl@2x.jpg 2x,
+                        ./images/works/img6tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img6desc@1x.jpg 1x,
+                        ./images/works/img6desc@2x.jpg 2x,
+                        ./images/works/img6desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img6mob@1x.jpg"
+                      alt="Монітор"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -253,12 +495,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img7.jpg"
-                    alt="Книга"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img7mob@1x.jpg 1x,
+                        ./images/works/img7mob@2x.jpg 2x,
+                        ./images/works/img7mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img7tabl@1x.jpg 1x,
+                        ./images/works/img7tabl@2x.jpg 2x,
+                        ./images/works/img7tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img7desc@1x.jpg 1x,
+                        ./images/works/img7desc@2x.jpg 2x,
+                        ./images/works/img7desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img7mob@1x.jpg"
+                      alt="Книга"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -281,12 +555,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img8.jpg"
-                    alt="Лейба"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img8mob@1x.jpg 1x,
+                        ./images/works/img8mob@2x.jpg 2x,
+                        ./images/works/img8mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source 
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img8tabl@1x.jpg 1x,
+                        ./images/works/img8tabl@2x.jpg 2x,
+                        ./images/works/img8tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img8desc@1x.jpg 1x,
+                        ./images/works/img8desc@2x.jpg 2x,
+                        ./images/works/img8desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img8mob@1x.jpg"
+                      alt="Лейба"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -309,12 +615,44 @@
             <li class="project-list-item">
               <a class="project-link" href="">
                 <div class="project-thumb">
-                  <img
-                    class="project-image"
-                    src="./images/works/img9.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:767.98px )"
+                      srcset="
+                        ./images/works/img9mob@1x.jpg 1x,
+                        ./images/works/img9mob@2x.jpg 2x,
+                        ./images/works/img9mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width:768px ) and (max-width:1199.98px)"
+                      srcset="
+                        ./images/works/img9tabl@1x.jpg 1x,
+                        ./images/works/img9tabl@2x.jpg 2x,
+                        ./images/works/img9tabl@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                     <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/works/img9desc@1x.jpg 1x,
+                        ./images/works/img9desc@2x.jpg 2x,
+                        ./images/works/img9desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="project-image"
+                      src="./images/works/img9mob@1x.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-overlay-text">
@@ -341,7 +679,8 @@
         <div class="footer-block">
           <div class="footer-block-address">
             <a class="footer-logo" href="./index.html">
-              <span class="logo-accent">Web</span>Studio
+              <span class="logo-accent">Web</span>
+              Studio
             </a>
             <address class="footer-address">
               <span class="footer-street">м. Київ, пр-т Лесі Українки, 26</span>
@@ -405,5 +744,6 @@
         </div>
       </div>
     </footer>
+    <script defer src="./mobile-menu.js"></script>
   </body>
 </html>
